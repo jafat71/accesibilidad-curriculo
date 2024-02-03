@@ -8,11 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen bg-gray-800 font-mono" tabindex="1" aria-label="Cuerpo del Currículo">
+<body class="min-h-screen bg-gray-800 font-mono sm: text-base md:text-xl" tabindex="1" aria-label="Cuerpo del Currículo">
     <header class="flex justify-center pt-10 text-center text-2xl text-white font-bold" tabindex="2" aria-label="Encabezado del Currículo">
         <h1>Currículo Personal</h1>
     </header>
-    <div class="grid m-4 p-2 gap-4 grid-cols-1 rounded-xl bg-gray-200 md:grid-cols-2 md:m-8 lg:grid-cols-3 ">
+    <div class="grid m-3 p-2 gap-4 grid-cols-1 rounded-xl bg-gray-200 md:grid-cols-2 md:m-8 lg:grid-cols-3 ">
         <!-- Información personal -->
         <div class="flex flex-col w-auto m-8 space-y-3 items-center" 
         aria-label="Sección de datos personales" tabindex="3">
@@ -25,24 +25,24 @@
         
         <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="8">
             <h2 class="text-2xl font-bold">Estudios</h2>
-            <table class="border border-black" aria-label="Tabla de Estudios" tabindex="9">
-                <thead class="border border-black bg-blue-700 text-white">
+            <table class="border border-black h-40 md:h-80 " aria-label="Tabla de Estudios" tabindex="9">
+                <thead class="border border-black bg-blue-700 text-white transform duration-300">
                     <tr>
-                        <th class="border items-center justify-center p-3" tabindex="10">Grado</th>
-                        <th class="border items-center justify-center p-3" tabindex="11">Institución</th>
-                        <th class="border items-center justify-center p-3" tabindex="12">Año de Graduación</th>
+                        <th class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg " tabindex="10">Grado</th>
+                        <th class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg" tabindex="11">Institución</th>
+                        <th class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg" tabindex="12">Año de Graduación</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr tabindex="13">
-                        <td class="border items-center justify-center p-3">Bachillerato</td>
-                        <td class="border items-center justify-center p-3">J.A.E. LA SALLE LOJA</td>
-                        <td class="border items-center justify-center p-3">2018</td>
+                        <td class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg">Bachillerato</td>
+                        <td class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg">J.A.E. LA SALLE LOJA</td>
+                        <td class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg">2018</td>
                     </tr>
                     <tr tabindex="14">
-                        <td class="border items-center justify-center p-3">Ing. Software</td>
-                        <td class="border items-center justify-center p-3">Escuela Politécnica Nacional</td>
-                        <td class="border items-center justify-center p-3">En curso</td>
+                        <td class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg">Ing. Software</td>
+                        <td class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg">Escuela Politécnica Nacional</td>
+                        <td class="border items-center justify-center text-sm md:p-2 md:text-base lg:text-lg">En curso</td>
                     </tr>
                 </tbody>
             </table>
@@ -50,26 +50,26 @@
         
         <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="15">
             <h2 class="text-2xl font-bold">Tecnologías</h2>
-            <div class="grid grid-cols-3 gap-4" aria-label="Grid de Lenguajes de Programación y Tecnologías" tabindex="16">
-                <div tabindex="17" class="flex flex-col items-center"><img src="https://cdn.iconscout.com/icon/free/png-256/free-react-1-282599.png?f=webp" alt="REACT" class="w-10">REACT</div>
-                <div tabindex="18" class="flex flex-col items-center"><img src="https://static-00.iconduck.com/assets.00/typescript-icon-icon-1024x1024-vh3pfez8.png" alt="TYPESCRIPT" class="w-10">TYPESCRIPT</div>
-                <div tabindex="19" class="flex flex-col items-center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vOZhu3cQePzrtKPURpnOPOKnXZyUX2M7P4SCAKP9Rw&s" alt="NODEJS" class="w-10">NODEJS</div>
-                <div tabindex="20" class="flex flex-col items-center"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="TAILWIND" class="w-10">TAILWIND</div>
-                <div tabindex="21" class="flex flex-col items-center"><img src="https://www.svgrepo.com/show/354380/spring-icon.svg" alt="SPRING" class="w-10">SPRING</div>
-                <div tabindex="22" class="flex flex-col items-center"><img src="https://cdn3d.iconscout.com/3d/free/thumb/free-python-6432342-5326385.png?f=webp" alt="PYTHON" class="w-10">PYTHON</div>
+            <div class="grid grid-cols-3 gap-16 pt-10" aria-label="Grid de Lenguajes de Programación y Tecnologías" tabindex="16">
+                <div tabindex="17" class="flex flex-col items-center hover:scale-125 transform duration-300"><img src="https://cdn.iconscout.com/icon/free/png-256/free-react-1-282599.png?f=webp" alt="REACT" class="w-12">REACT</div>
+                <div tabindex="18" class="flex flex-col items-center hover:scale-125 transform duration-300"><img src="https://static-00.iconduck.com/assets.00/typescript-icon-icon-1024x1024-vh3pfez8.png" alt="TYPESCRIPT" class="w-12">TYPESCRIPT</div>
+                <div tabindex="19" class="flex flex-col items-center hover:scale-125 transform duration-300"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vOZhu3cQePzrtKPURpnOPOKnXZyUX2M7P4SCAKP9Rw&s" alt="NODEJS" class="w-12">NODEJS</div>
+                <div tabindex="20" class="flex flex-col items-center hover:scale-125 transform duration-300"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="TAILWIND" class="w-12">TAILWIND</div>
+                <div tabindex="21" class="flex flex-col items-center hover:scale-125 transform duration-300"><img src="https://www.svgrepo.com/show/354380/spring-icon.svg" alt="SPRING" class="w-12">SPRING</div>
+                <div tabindex="22" class="flex flex-col items-center hover:scale-125 transform duration-300"><img src="https://cdn3d.iconscout.com/3d/free/thumb/free-python-6432342-5326385.png?f=webp" alt="PYTHON" class="w-12">PYTHON</div>
             </div>
         </div>
     
         <div class="flex flex-col w-auto m-8 space-y-3 items-center " tabindex="23">
             <h2 class="text-2xl font-bold">Experiencia/Proyectos</h2>
-            <ul class="flex flex-col " aria-label="Lista de Experiencia/Proyectos" tabindex="24">
-                <li tabindex="25">
+            <ul class="flex flex-col pt-10 " aria-label="Lista de Experiencia/Proyectos" tabindex="24">
+                <li tabindex="25" class="hover:scale-125 transform duration-300">
                     <a href="https://github.com/jafat71/restServerS8/tree/6.0.0" class="flex flex-row items-center space-x-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GIT REPO"  class="w-10 mr-3 mb-5">
                         FULL REST API: AUTH, JWT.
                     </a>
                 </li>
-                <li tabindex="26">
+                <li tabindex="26" class="hover:scale-125 transform duration-300">
                     <a href="https://github.com/jafat71/restServerS8/tree/6.0.0" class="flex flex-row items-center space-x-3">
                         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GIT REPO"  class="w-10 mr-3 mb-5">
                         REACT + NODE APP

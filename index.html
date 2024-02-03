@@ -8,19 +8,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen bg-slate-100 font-mono" tabindex="1" aria-label="Cuerpo del Currículo">
-    <header class="flex justify-center pt-10 text-center text-2xl font-bold" tabindex="2" aria-label="Encabezado del Currículo">
+<body class="min-h-screen bg-gray-800 font-mono" tabindex="1" aria-label="Cuerpo del Currículo">
+    <header class="flex justify-center pt-10 text-center text-2xl text-white font-bold" tabindex="2" aria-label="Encabezado del Currículo">
         <h1>Currículo Personal</h1>
     </header>
-    <div class="grid m-10 p-2 gap-4 grid-cols-1 rounded-xl bg-white md:grid-cols-2 lg:grid-cols-3 ">
+    <div class="grid m-4 p-2 gap-4 grid-cols-1 rounded-xl bg-gray-200 md:grid-cols-2 md:m-8 lg:grid-cols-3 ">
         <!-- Información personal -->
         <div class="flex flex-col w-auto m-8 space-y-3 items-center" 
         aria-label="Sección de datos personales" tabindex="3">
             <h2 class="text-2xl font-bold">Datos Personales</h2>
             <img class="w-28 rounded-2xl" tabindex="4" src="foto.jpg" alt="Fotografía" style="max-width: 100%; height: auto;">
-            <p tabindex="5">Nombre: Israel Josafat Matute Moncada</p>
-            <p tabindex="6">Correo: israel.matute@epn.edu.ec</p>
-            <p tabindex="7">Teléfono: +593 980 397812</p>
+            <p tabindex="5" class="text-center">Nombre: Israel Josafat Matute Moncada</p>
+            <p tabindex="6" class="text-center">Correo: israel.matute@epn.edu.ec</p>
+            <p tabindex="7" class="text-center">Teléfono: +593 980 397812</p>
         </div>
         
         <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="8">
@@ -49,15 +49,15 @@
         </div>
         
         <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="15">
-            <h2 class="text-2xl font-bold">Lenguajes de Programación y Tecnologías</h2>
-            <ul class="flex flex-col md:flex-row md:space-x-3 " aria-label="Lista de Lenguajes de Programación y Tecnologías" tabindex="16">
-                <li tabindex="17" class="flex flex-col items-center"><img src="https://cdn.iconscout.com/icon/free/png-256/free-react-1-282599.png?f=webp" alt="REACT"  class="w-10">REACT</li>
-                <li tabindex="18" class="flex flex-col items-center "><img src="https://static-00.iconduck.com/assets.00/typescript-icon-icon-1024x1024-vh3pfez8.png" alt="TYPESCRIPT"  class="w-10">TYPESCRIPT</li>
-                <li tabindex="19" class="flex flex-col items-center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vOZhu3cQePzrtKPURpnOPOKnXZyUX2M7P4SCAKP9Rw&s" alt="NODEJS"  class="w-10">NODEJS</li>
-                <li tabindex="20" class="flex flex-col items-center"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="TAILWIND"  class="w-10">TAILWIND</li>
-                <li tabindex="21" class="flex flex-col items-center"><img src="https://www.svgrepo.com/show/354380/spring-icon.svg" alt="SPRING"  class="w-10">SPRING</li>
-                <li tabindex="22" class="flex flex-col items-center"><img src="https://cdn3d.iconscout.com/3d/free/thumb/free-python-6432342-5326385.png?f=webp" alt="PYTHON"  class="w-10">PYTHON</li>
-            </ul>
+            <h2 class="text-2xl font-bold">Tecnologías</h2>
+            <div class="grid grid-cols-3 gap-4" aria-label="Grid de Lenguajes de Programación y Tecnologías" tabindex="16">
+                <div tabindex="17" class="flex flex-col items-center"><img src="https://cdn.iconscout.com/icon/free/png-256/free-react-1-282599.png?f=webp" alt="REACT" class="w-10">REACT</div>
+                <div tabindex="18" class="flex flex-col items-center"><img src="https://static-00.iconduck.com/assets.00/typescript-icon-icon-1024x1024-vh3pfez8.png" alt="TYPESCRIPT" class="w-10">TYPESCRIPT</div>
+                <div tabindex="19" class="flex flex-col items-center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vOZhu3cQePzrtKPURpnOPOKnXZyUX2M7P4SCAKP9Rw&s" alt="NODEJS" class="w-10">NODEJS</div>
+                <div tabindex="20" class="flex flex-col items-center"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="TAILWIND" class="w-10">TAILWIND</div>
+                <div tabindex="21" class="flex flex-col items-center"><img src="https://www.svgrepo.com/show/354380/spring-icon.svg" alt="SPRING" class="w-10">SPRING</div>
+                <div tabindex="22" class="flex flex-col items-center"><img src="https://cdn3d.iconscout.com/3d/free/thumb/free-python-6432342-5326385.png?f=webp" alt="PYTHON" class="w-10">PYTHON</div>
+            </div>
         </div>
     
         <div class="flex flex-col w-auto m-8 space-y-3 items-center " tabindex="23">
@@ -88,9 +88,9 @@
     
         <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="29">
             <h2 class="text-2xl font-bold items">Referencias Personales</h2>
-            <p tabindex="30">Referencia 1: Ing. Tania Calle</p>
-            <p tabindex="31">Correo: referencia1@email.com</p>
-            <p tabindex="32">Teléfono: 111-222-3333</p>
+            <p tabindex="30" class="text-center">Referencia 1: Ing. Tania Calle</p>
+            <p tabindex="31" class="text-center">Correo: referencia1@email.com</p>
+            <p tabindex="32" class="text-center">Teléfono: 111-222-3333</p>
         </div>
     </div>
 </body>

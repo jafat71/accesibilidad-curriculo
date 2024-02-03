@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Personal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 font-mono" tabindex="1" aria-label="Cuerpo del Currículo">
+    <header class="flex justify-center pt-10 text-center text-2xl font-bold" tabindex="2" aria-label="Encabezado del Currículo">
+        <h1>Currículo Personal</h1>
+    </header>
+    <div class="grid m-10 p-2 gap-4 grid-cols-1 rounded-xl bg-white md:grid-cols-2 lg:grid-cols-3 ">
+        <!-- Información personal -->
+        <div class="flex flex-col w-auto m-8 space-y-3 items-center" 
+        aria-label="Sección de datos personales" tabindex="3">
+            <h2 class="text-2xl font-bold">Datos Personales</h2>
+            <img class="w-28 rounded-2xl" tabindex="4" src="foto.jpg" alt="Fotografía" style="max-width: 100%; height: auto;">
+            <p tabindex="5">Nombre: Israel Josafat Matute Moncada</p>
+            <p tabindex="6">Correo: israel.matute@epn.edu.ec</p>
+            <p tabindex="7">Teléfono: +593 980 397812</p>
+        </div>
+        
+        <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="8">
+            <h2 class="text-2xl font-bold">Estudios</h2>
+            <table class="border border-black" aria-label="Tabla de Estudios" tabindex="9">
+                <thead class="border border-black bg-blue-700 text-white">
+                    <tr>
+                        <th class="border items-center justify-center p-3" tabindex="10">Grado</th>
+                        <th class="border items-center justify-center p-3" tabindex="11">Institución</th>
+                        <th class="border items-center justify-center p-3" tabindex="12">Año de Graduación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr tabindex="13">
+                        <td class="border items-center justify-center p-3">Bachillerato</td>
+                        <td class="border items-center justify-center p-3">J.A.E. LA SALLE LOJA</td>
+                        <td class="border items-center justify-center p-3">2018</td>
+                    </tr>
+                    <tr tabindex="14">
+                        <td class="border items-center justify-center p-3">Ing. Software</td>
+                        <td class="border items-center justify-center p-3">Escuela Politécnica Nacional</td>
+                        <td class="border items-center justify-center p-3">En curso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="15">
+            <h2 class="text-2xl font-bold">Lenguajes de Programación y Tecnologías</h2>
+            <ul class="flex flex-col md:flex-row md:space-x-3 " aria-label="Lista de Lenguajes de Programación y Tecnologías" tabindex="16">
+                <li tabindex="17" class="flex flex-col items-center"><img src="https://cdn.iconscout.com/icon/free/png-256/free-react-1-282599.png?f=webp" alt="REACT"  class="w-10">REACT</li>
+                <li tabindex="18" class="flex flex-col items-center "><img src="https://static-00.iconduck.com/assets.00/typescript-icon-icon-1024x1024-vh3pfez8.png" alt="TYPESCRIPT"  class="w-10">TYPESCRIPT</li>
+                <li tabindex="19" class="flex flex-col items-center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vOZhu3cQePzrtKPURpnOPOKnXZyUX2M7P4SCAKP9Rw&s" alt="NODEJS"  class="w-10">NODEJS</li>
+                <li tabindex="20" class="flex flex-col items-center"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="TAILWIND"  class="w-10">TAILWIND</li>
+                <li tabindex="21" class="flex flex-col items-center"><img src="https://www.svgrepo.com/show/354380/spring-icon.svg" alt="SPRING"  class="w-10">SPRING</li>
+                <li tabindex="22" class="flex flex-col items-center"><img src="https://cdn3d.iconscout.com/3d/free/thumb/free-python-6432342-5326385.png?f=webp" alt="PYTHON"  class="w-10">PYTHON</li>
+            </ul>
+        </div>
+    
+        <div class="flex flex-col w-auto m-8 space-y-3 items-center " tabindex="23">
+            <h2 class="text-2xl font-bold">Experiencia/Proyectos</h2>
+            <ul class="flex flex-col " aria-label="Lista de Experiencia/Proyectos" tabindex="24">
+                <li tabindex="25">
+                    <a href="https://github.com/jafat71/restServerS8/tree/6.0.0" class="flex flex-row items-center space-x-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GIT REPO"  class="w-10 mr-3 mb-5">
+                        FULL REST API: AUTH, JWT.
+                    </a>
+                </li>
+                <li tabindex="26">
+                    <a href="https://github.com/jafat71/restServerS8/tree/6.0.0" class="flex flex-row items-center space-x-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GIT REPO"  class="w-10 mr-3 mb-5">
+                        REACT + NODE APP
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="27">
+            <h2 class="text-2xl font-bold">Video de Presentación</h2>
+            <video controls tabindex="28" aria-label="Video de presentación">
+                <source src="/curriculo_usabilidad.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    
+        <div class="flex flex-col w-auto m-8 space-y-3 items-center" tabindex="29">
+            <h2 class="text-2xl font-bold items">Referencias Personales</h2>
+            <p tabindex="30">Referencia 1: Ing. Tania Calle</p>
+            <p tabindex="31">Correo: referencia1@email.com</p>
+            <p tabindex="32">Teléfono: 111-222-3333</p>
+        </div>
+    </div>
+</body>
+
+</html>
